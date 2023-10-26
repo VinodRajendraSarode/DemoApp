@@ -1,5 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import App from '@/Layouts/app-layout.vue';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
@@ -20,10 +21,8 @@ const form = useForm({
 
 <template>
 
-    <AuthenticatedLayout>
-        <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Post</h2>
-        </template>
+    <App>
+     
 
         <div class="py-12">
           <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
@@ -60,5 +59,5 @@ const form = useForm({
         </div>
 
      
-    </AuthenticatedLayout>
+    </App>
 </template>

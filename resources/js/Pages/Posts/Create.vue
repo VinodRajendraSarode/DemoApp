@@ -2,6 +2,7 @@
 import { reactive } from 'vue'
 import { router } from '@inertiajs/vue3'
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import App from '@/Layouts/app-layout.vue';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
@@ -23,7 +24,7 @@ function submit() {
 
 <template>
 
-    <AuthenticatedLayout>
+    <App>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">Post</h2>
         </template>
@@ -66,5 +67,5 @@ function submit() {
         </div>
 
      
-    </AuthenticatedLayout>
+    </App>
 </template>

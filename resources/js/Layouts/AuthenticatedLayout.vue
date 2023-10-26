@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue';
 import ApplicationLogo from '@/Components/ApplicationLogo.vue';
+ import Footer from '@/Components/layout/Footer.vue';
+ import Header from '@/Components/layout/Header.vue';
+ import Sidebar from '@/Components/layout/Sidebar.vue';
 import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
@@ -149,6 +152,7 @@ const showingNavigationDropdown = ref(false);
             <main>
                 <slot />
             </main>
+             <Footer />
         </div>
     </div>
 </template>
